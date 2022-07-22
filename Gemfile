@@ -6,6 +6,11 @@ gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 
+gem 'activeadmin', '~> 2.13', '>= 2.13.1'
+gem 'devise', '~> 4.8', '>= 4.8.1'
+gem 'cancancan', '~> 3.4'
+gem 'pundit', '~> 2.2'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
