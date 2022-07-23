@@ -10,7 +10,6 @@ gem 'activeadmin', '~> 2.13', '>= 2.13.1'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'cancancan', '~> 3.4'
 gem 'pundit', '~> 2.2'
-gem 'awesome_print', :require => 'ap'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -51,6 +50,13 @@ gem "sassc-rails"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'awesome_print', :require => 'ap'
+  gem 'faker', '~> 2.21'
+  gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
+  gem 'factory_bot_rails', '~> 6.2'
+  gem 'fuubar', '~> 2.5', '>= 2.5.1'
+  gem 'bullet', '~> 7.0', '>= 7.0.2'
+
 end
 
 group :development do
@@ -63,4 +69,3 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-
