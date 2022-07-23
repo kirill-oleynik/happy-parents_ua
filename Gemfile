@@ -10,6 +10,7 @@ gem 'activeadmin', '~> 2.13', '>= 2.13.1'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'cancancan', '~> 3.4'
 gem 'pundit', '~> 2.2'
+gem 'awesome_print', :require => 'ap'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
