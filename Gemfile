@@ -19,11 +19,10 @@ gem 'bootsnap', require: false
 
 # Auth
 gem 'activeadmin', '~> 2.13', '>= 2.13.1'
+gem 'bcrypt', '~> 3.1.7'
 gem 'cancancan', '~> 3.4'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'pundit', '~> 2.2'
-# Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-# gem "bcrypt", "~> 3.1.7"
 
 # Assets
 gem 'importmap-rails'

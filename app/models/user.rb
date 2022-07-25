@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
+# phone:string
+# password_digest:string (password + password_confirmation)
 class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable, :trackable
+  has_secure_password
+  validates :phone, uniqueness: true
 end

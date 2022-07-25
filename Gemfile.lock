@@ -325,6 +325,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin (~> 2.13, >= 2.13.1)
   awesome_print
+  bcrypt (~> 3.1.7)
   bootsnap
   bullet (~> 7.0, >= 7.0.2)
   bundler-audit (~> 0.9.1)
