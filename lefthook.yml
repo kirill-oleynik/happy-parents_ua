@@ -61,9 +61,9 @@ all:
     rubocop:
       run: |
         bundle exec rubocop --parallel
-    # fasterer:
-    #   run: |
-    #     bundle exec fasterer
+    fasterer:
+      run: |
+        bundle exec fasterer
     i18n:
       glob:
       run: |

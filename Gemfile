@@ -59,6 +59,7 @@ group :development do
   gem 'bundler-audit', '~> 0.9.1'
   gem 'bundler-leak', '~> 0.3.0'
   gem 'database_consistency', '~> 1.1', '>= 1.1.15', require: false
+  gem 'fasterer', '~> 0.10.0'
   gem 'i18n-tasks', '~> 1.0', '>= 1.0.11'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
