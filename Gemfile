@@ -47,7 +47,7 @@ group :development, :test do
   gem 'rubocop-rails', '~> 2.15', '>= 2.15.2'
   gem 'rubocop-rspec', '~> 2.12', '>= 2.12.1'
   # gem 'lefthook'
-  # gem 'reek', '~> 6.1', '>= 6.1.1'
+  gem 'reek', '~> 6.1', '>= 6.1.1'
 end
 
 group :test do
