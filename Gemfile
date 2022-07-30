@@ -56,11 +56,11 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem 'web-console'
-  # gem 'i18n-tasks', '~> 1.0', '>= 1.0.11'
   gem 'bundler-audit', '~> 0.9.1'
   gem 'bundler-leak', '~> 0.3.0'
   gem 'database_consistency', '~> 1.1', '>= 1.1.15', require: false
+  gem 'i18n-tasks', '~> 1.0', '>= 1.0.11'
+  gem 'web-console'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
