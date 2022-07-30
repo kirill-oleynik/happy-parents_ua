@@ -1,0 +1,70 @@
+pre-commit:
+  parallel: true
+
+  commands:
+    reek:
+      glob: "*.rb"
+      run: |
+        bundle exec reek {staged_files}
+    rubocop:
+      glob: "*.rb"
+      run: |
+        bundle exec rubocop {staged_files} --parallel
+    brakeman:
+      run: |
+        bundle exec brakeman --quiet \
+                             --ensure-latest \
+                             --no-pager \
+                             --no-summary
+    bundle:
+      glob: "{Gemfile,Gemfile.lock}"
+      run: |
+        bundle exec bundle-audit check --update \
+                                       --quiet && \
+        bundle exec bundle-leak check --update
+    i18n:
+      glob: "*.{rb,yml,html.haml}"
+      run: |
+        bundle exec i18n-tasks health
+default: &default
+  commands:
+    bundle:
+      files: git diff --name-only HEAD master
+      glob: "{Gemfile,Gemfile.lock}"
+      run: |
+        bundle install
+post-checkout:
+  <<: *default
+
+post-merge:
+  <<: *default
+
+post-rewrite:
+  <<: *default
+
+all:
+  parallel: true
+
+  commands:
+    brakeman:
+      run: |
+        bundle exec brakeman --ensure-latest \
+                             --no-pager
+    bundle:
+      run: |
+        bundle exec bundle-audit check --update && \
+        bundle exec bundle-leak check --update
+    reek:
+      files: git diff --name-only HEAD master
+      run: |
+        bundle exec reek {files}
+    rubocop:
+      run: |
+        bundle exec rubocop --parallel
+    # fasterer:
+    #   run: |
+    #     bundle exec fasterer
+    i18n:
+      glob:
+      run: |
+        bundle exec i18n-tasks health
