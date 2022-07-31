@@ -1,7 +1,7 @@
 ---
 en:
   active_admin:
-    dashboard: Main Panel
+    dashboard: Dashboard
     dashboard_welcome:
       call_to_action: Custom call to action
       welcome: Custom welcome message
