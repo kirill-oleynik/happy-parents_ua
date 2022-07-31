@@ -39,15 +39,15 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 6.2'
   gem 'faker', '~> 2.21'
   gem 'fuubar', '~> 2.5', '>= 2.5.1'
+  gem 'lefthook', '~> 1.0', '>= 1.0.5'
   gem 'pry', '~> 0.14.1'
+  gem 'reek', '~> 6.1', '>= 6.1.1'
   gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
   gem 'rubocop', '~> 1.32'
   gem 'rubocop-faker', '~> 1.1'
   gem 'rubocop-performance', '~> 1.14', '>= 1.14.3'
   gem 'rubocop-rails', '~> 2.15', '>= 2.15.2'
   gem 'rubocop-rspec', '~> 2.12', '>= 2.12.1'
-  # gem 'lefthook'
-  # gem 'reek', '~> 6.1', '>= 6.1.1'
 end
 
 group :test do
@@ -55,12 +55,12 @@ group :test do
 end
 
 group :development do
-  # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem 'web-console'
-  # gem 'i18n-tasks', '~> 1.0', '>= 1.0.11'
+  gem 'brakeman', '~> 5.2', '>= 5.2.3'
   gem 'bundler-audit', '~> 0.9.1'
   gem 'bundler-leak', '~> 0.3.0'
-  # gem 'database_consistency', '~> 1.1', '>= 1.1.15',, require: false
+  gem 'database_consistency', '~> 1.1', '>= 1.1.15', require: false
+  gem 'fasterer', '~> 0.10.0'
+  gem 'i18n-tasks', '~> 1.0', '>= 1.0.11'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"

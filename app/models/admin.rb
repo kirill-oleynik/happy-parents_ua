@@ -10,6 +10,7 @@ class Admin < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }, presence: true, uniqueness: true
+  validates :email, presence: true
 
   private
 

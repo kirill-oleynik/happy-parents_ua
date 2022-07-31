@@ -1,25 +1,12 @@
 # frozen_string_literal: true
 
 ActiveAdmin.setup do |config|
-  # == Site Title
-  #
-  # Set the title that is displayed on the main layout
-  # for each of the active admin pages.
-  #
-  config.site_title = 'Happy Parents Ua'
-
-  # Set the link url for the title. For example, to take
-  # users to your main site. Defaults to no link.
-  #
-  # config.site_title_link = "/"
-
+  config.site_title = 'Happy Parents'
+  config.site_title_link = '/'
   # Set an optional image to be displayed for the header
   # instead of a string (overrides :site_title)
-  #
   # Note: Aim for an image that's 21px high so it fits in the header.
-  #
   # config.site_title_image = "logo.png"
-
   # == Default Namespace
   #
   # Set the default namespace each administration resource
@@ -41,9 +28,9 @@ ActiveAdmin.setup do |config|
   # a namespace block. For example, to change the site title
   # within a namespace:
   #
-  #   config.namespace :admin do |admin|
-  #     admin.site_title = "Custom Admin Title"
-  #   end
+  # config.namespace :admin do |admin|
+  #   admin.site_title = "Custom Admin Title"
+  # end
   #
   # This will ONLY change the title for the admin section. Other
   # namespaces will continue to use the main "site_title" configuration.
@@ -170,7 +157,7 @@ ActiveAdmin.setup do |config|
   # You can run `bin/rails runner 'puts I18n.t("date.formats")'` to see the
   # available formats in your application.
   #
-  config.localize_format = :long
+  config.localize_format = :short
 
   # == Setting a Favicon
   #
