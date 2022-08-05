@@ -33,8 +33,6 @@ default: &default
       glob: "{Gemfile,Gemfile.lock}"
       run: |
         bundle install
-post-checkout:
-  <<: *default
 
 post-merge:
   <<: *default
