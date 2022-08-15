@@ -14,11 +14,14 @@ jobs:
         ruby-version: '3.1.0'
     - name: Install dependencies
       run: bundle install
+    - uses: harmon758/postgresql-action@v1
+      with:
+        postgresql version: '12.11'
     - name: setup Database
-      # run: |
-        # bundle exec rake db:create
-        # bundle exec rake db:migrate
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v3
-    # - name: Run tests
-      # run: bundle exec rspec
+      run: |
+        bundle exec rake db:create
+        bundle exec rake db:migrate
+    # - name: Setup tmate session
+      # uses: mxschmitt/action-tmate@v3
+    - name: Run tests
+      run: bundle exec rspec
