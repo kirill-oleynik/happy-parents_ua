@@ -5,26 +5,30 @@ on: [push]
 jobs:
   tests:
     runs-on: ubuntu-latest
-    services:
-      db:
-        image: postgres:12.2-alpine
-        ports: ['5432:5432']
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-        env:
-          POSTGRES_HOST: localhost
-          POSTGRES_DB: happy-parents_ua_test
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
+    # services:
+    #   db:
+    #     image: postgres:12.2-alpine
+    #     ports: ['5432:5432']
+    #     options: >-
+    #       --health-cmd pg_isready
+    #       --health-interval 10s
+    #       --health-timeout 5s
+    #       --health-retries 5
+    #     env:
+    #       POSTGRES_HOST: localhost
+    #       POSTGRES_DB: happy-parents_ua_test
+    #       POSTGRES_USER: postgres
+    #       POSTGRES_PASSWORD: postgres
     steps:
     - uses: actions/checkout@v3
     - name: Set up Ruby
       uses: ruby/setup-ruby@359bebbc29cbe6c87da6bc9ea3bc930432750108
       with:
         ruby-version: '3.1.0'
+    - name: Install PostgresQL
+      uses: harmon758/postgresql-action@v1
+      with:
+        postgresql_version: '12'
     - name: Install dependencies
       run: bundle install
     - name: Setup tmate session
