@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: INstall & setup PostgresQL
-      run: |
-        sudo apt-get update
-        sudo apt-get install postgresql postgresql-contrib
-        sudo -i -u postgres
+    # - name: INstall & setup PostgresQL
+    #   run: |
+    #     sudo apt-get update
+    #     sudo apt-get install postgresql postgresql-contrib
+    #     sudo -i -u postgres
     - name: Install Ruby
       uses: ruby/setup-ruby@359bebbc29cbe6c87da6bc9ea3bc930432750108
       with:
