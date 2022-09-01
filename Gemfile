@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.0'
 # General
 gem 'pg', '~> 1.4'
-gem 'puma', '~> 5.0'
+gem 'puma', '~> 5.6'
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
