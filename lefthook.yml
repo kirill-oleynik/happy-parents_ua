@@ -1,6 +1,4 @@
 pre-push:
-  parallel: true
-
   commands:
     reek:
       glob: "*.rb"
