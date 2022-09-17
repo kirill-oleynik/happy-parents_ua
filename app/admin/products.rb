@@ -26,6 +26,7 @@ ActiveAdmin.register Product do
       form.input :code
       form.input :title
       form.input :price, label: t('admin.store.products.form.labels.price')
+      form.actions
     end
   end
 end

@@ -6,4 +6,4 @@ en:
       products:
         form:
           labels:
-            price: Price (cents)
+            price: Price (UAH)
