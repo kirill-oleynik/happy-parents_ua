@@ -1,0 +1,9 @@
+---
+en:
+  admin:
+    store:
+      title: Store
+      products:
+        form:
+          labels:
+            price: Price (cents)
