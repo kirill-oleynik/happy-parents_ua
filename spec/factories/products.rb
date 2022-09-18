@@ -4,6 +4,6 @@ FactoryBot.define do
   factory :product do
     sequence(:code) { |number| "#{Faker::Lorem.word}#{number}" }
     title { Faker::Lorem.words(number: 2).join(' ') }
-    price { srand.to_s[0, [1, 2, 3, 4].sample].to_i }
+    price_cents { srand.to_s[0, [1, 2, 3].sample].to_i }
   end
 end

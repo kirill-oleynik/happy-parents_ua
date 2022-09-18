@@ -28,3 +28,4 @@ Metrics/BlockLength:
   Enabled: true
   Exclude:
     - db/**/*
+    - app/admin/**

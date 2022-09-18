@@ -7,3 +7,6 @@ en:
         form:
           labels:
             price: Price (UAH)
+        filters:
+          labels:
+            price_cents: Price in cents

@@ -13,13 +13,20 @@ ActiveAdmin.register Product do
     column :price
     actions
   end
+  # ================== show page =======================
+  show do
+    attributes_table do
+      %i[
+        code
+        title
+        price
+      ].each { |attribute| row(attribute) }
+    end
+  end
   # ================== filters =======================
-  %i[
-    code
-    title
-    price
-    updated_at
-  ].each { |attribute| filter(attribute) }
+  filter :code
+  filter :title
+  filter :price_cents, label: I18n.t('admin.store.products.filters.labels.price_cents')
   # ================== forms =======================
   form do |form|
     form.inputs do
