@@ -3,7 +3,7 @@
 ActiveAdmin.register Product do
   menu parent: I18n.t('admin.store.title')
   actions :all
-  permit_params %i[code title price]
+  permit_params %i[code title slug price]
 
   # ================== index page =======================
   index do
@@ -19,6 +19,7 @@ ActiveAdmin.register Product do
       %i[
         code
         title
+        slug
         price
       ].each { |attribute| row(attribute) }
     end
@@ -32,6 +33,7 @@ ActiveAdmin.register Product do
     form.inputs do
       form.input :code
       form.input :title
+      form.input :slug
       form.input :price, label: t('admin.store.products.form.labels.price')
       form.actions
     end

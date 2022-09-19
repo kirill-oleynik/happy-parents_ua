@@ -1,5 +1,12 @@
 ---
 en:
+  activerecord:
+    errors:
+      models:
+        product:
+          attributes:
+            slug:
+              bad_slug: Should contain only downcase letters, numbers & dashes
   active_admin:
     dashboard: Dashboard
     dashboard_welcome:
