@@ -10,7 +10,7 @@ RSpec.describe Product, type: :model do
     %i[code slug].map do |attribute|
       it { is_expected.to validate_uniqueness_of(attribute) }
     end
-    it { is_expected.to validate_numericality_of(:price_cents), greater_than_or_equal_to: 0 }
+    it { is_expected.to validate_numericality_of(:price_cents).is_greater_than(0) }
 
     %w[slug slug-1].map do |value|
       it { is_expected.to allow_value(value).for(:slug) }
