@@ -4,7 +4,7 @@ FactoryBot.define do
   factory :product do
     sequence(:code) { |number| "#{Faker::Lorem.word}#{number}" }
     title { Faker::Lorem.words(number: 2).join(' ') }
-    price_cents { srand.to_s[0, [1, 2, 3].sample].to_i }
+    price_cents { srand.to_s[0, (1..5).to_a.sample].to_i }
     sequence(:slug) { |number| Faker::Internet.unique.slug(glue: '-') + number.to_s }
   end
 end
