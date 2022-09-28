@@ -1,6 +1,4 @@
-pre-commit:
-  parallel: true
-
+pre-push:
   commands:
     reek:
       glob: "*.rb"
