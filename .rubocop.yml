@@ -12,6 +12,7 @@ AllCops:
   NewCops: enable
 
 
+# ===================== Rails ====================
 Style/Documentation:
   Enabled: true
   Exclude:
@@ -20,6 +21,7 @@ Style/Documentation:
     - config/**/*
     - db/**/*
 
+# ===================== Metrics ====================
 Metrics/MethodLength:
   Enabled: true
   Exclude:
@@ -29,3 +31,6 @@ Metrics/BlockLength:
   Exclude:
     - db/**/*
     - app/admin/**
+# ===================== RSpec ====================
+RSpec/NestedGroups:
+  Max: 4

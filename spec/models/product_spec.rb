@@ -20,5 +20,34 @@ RSpec.describe Product, type: :model do
     %w[slug_1 SLUG SLUG-1 &&&].map do |value|
       it { is_expected.not_to allow_value(value).for(:slug) }
     end
+    describe 'age range' do
+      let(:product) { build(:product, min_age:, max_age:) }
+
+      context 'when min age is lower than max age' do
+        let(:min_age) { 1 }
+        let(:max_age) { 2 }
+
+        it 'product is valid' do
+          expect(product).to be_valid
+        end
+      end
+
+      context 'when min age is greater than max age' do
+        let(:min_age) { 2 }
+        let(:max_age) { 1 }
+
+        it 'product has proper error message' do
+          product.valid?
+          expect(product.errors.messages[:base]).to include(I18n.t(
+                                                              'activerecord.errors.models.' \
+                                                              'product.attributes.base.invalid_age_range'
+                                                            ))
+        end
+
+        it 'product is invalid' do
+          expect(product).not_to be_valid
+        end
+      end
+    end
   end
 end
