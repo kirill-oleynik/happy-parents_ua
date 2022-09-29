@@ -8,6 +8,10 @@ FactoryBot.define do
     sequence(:slug) { |number| Faker::Internet.unique.slug(glue: '-') + number.to_s }
     min_age { (0..1).to_a.sample }
     max_age { (1..99).to_a.sample }
+    is_published { false }
+    trait :is_published do
+      is_published { true }
+    end
     trait :for_male do
       male_gender { true }
     end

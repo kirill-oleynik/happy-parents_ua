@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_22_075236) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_29_172254) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -56,6 +56,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_22_075236) do
     t.boolean "female_gender"
     t.integer "min_age"
     t.integer "max_age"
+    t.boolean "is_published"
     t.index ["code"], name: "index_products_on_code", unique: true
     t.index ["slug"], name: "index_products_on_slug", unique: true
   end

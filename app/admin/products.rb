@@ -3,12 +3,22 @@
 ActiveAdmin.register Product do
   menu parent: I18n.t('admin.store.title')
   actions :all
-  permit_params %i[code title slug price male_gender female_gender min_age max_age]
+  permit_params %i[
+    code title
+    slug
+    price
+    male_gender
+    female_gender
+    min_age
+    max_age
+    is_published
+  ]
 
   # ================== index page =======================
   index do
     selectable_column
     column :code
+    colum :is_published
     column :title
     column :price
     actions
@@ -18,6 +28,7 @@ ActiveAdmin.register Product do
     attributes_table do
       %i[
         code
+        is_published
         title
         slug
         price
@@ -30,6 +41,7 @@ ActiveAdmin.register Product do
   end
   # ================== filters =======================
   filter :code
+  filter :is_published
   filter :title
   filter :male_gender
   filter :female_gender
@@ -44,6 +56,7 @@ ActiveAdmin.register Product do
   form do |form|
     form.inputs do
       form.input :code
+      form.input :is_published
       form.input :title
       form.input :slug
       form.input :male_gender
