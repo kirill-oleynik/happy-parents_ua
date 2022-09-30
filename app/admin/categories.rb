@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 ActiveAdmin.register Category do
-  menu parent: I18n.t('admin.store.title')
+  menu parent: I18n.t('active_admin.store.title')
   actions :all
   permit_params %i[
     name

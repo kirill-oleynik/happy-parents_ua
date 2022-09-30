@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 ActiveAdmin.register Product do
-  menu parent: I18n.t('admin.store.title')
+  menu parent: I18n.t('active_admin.store.title')
   actions :all
   permit_params %i[
     code title
@@ -18,7 +18,7 @@ ActiveAdmin.register Product do
   index do
     selectable_column
     column :code
-    colum :is_published
+    column :is_published
     column :title
     column :price
     actions
@@ -47,7 +47,7 @@ ActiveAdmin.register Product do
   filter :female_gender
   filter :in_age
   filter :ax_age
-  filter :price_cents, label: I18n.t('admin.store.products.filters.labels.price_cents')
+  filter :price_cents, label: I18n.t('active_admin.store.products.filters.labels.price_cents')
   # ================== forms =======================
   form do |f|
     f.inputs
@@ -63,7 +63,7 @@ ActiveAdmin.register Product do
       form.input :female_gender
       form.input :min_age
       form.input :max_age
-      form.input :price, label: t('admin.store.products.form.labels.price')
+      form.input :price, label: t('active_admin.store.products.form.labels.price')
       form.semantic_errors
       form.actions
     end
