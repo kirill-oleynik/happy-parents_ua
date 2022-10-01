@@ -23,22 +23,6 @@ ActiveAdmin.register Product do
     column :price
     actions
   end
-  # ================== show page =======================
-  show do
-    attributes_table do
-      %i[
-        code
-        is_published
-        title
-        slug
-        price
-        male_gender
-        min_age
-        max_age
-        female_gender
-      ].each { |attribute| row(attribute) }
-    end
-  end
   # ================== filters =======================
   filter :code
   filter :is_published
@@ -49,10 +33,6 @@ ActiveAdmin.register Product do
   filter :ax_age
   filter :price_cents, label: I18n.t('active_admin.store.products.filters.labels.price_cents')
   # ================== forms =======================
-  form do |f|
-    f.inputs
-    f.actions
-  end
   form do |form|
     form.inputs do
       form.input :code

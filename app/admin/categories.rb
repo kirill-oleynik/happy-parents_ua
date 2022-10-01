@@ -8,11 +8,9 @@ ActiveAdmin.register Category do
   ]
   # ================== index page =======================
   index do
-    selectable_column
     column :name
     actions
   end
-  # ================== show page =======================
   # ================== filters =======================
   filter :name
   # ================== forms =======================
