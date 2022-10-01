@@ -18,9 +18,11 @@ uk:
       category:
         one: Категорія
         other: Категорії
+        many: Категорії
       product:
         one: Товар
         other: Товари
+        many: Товари
   header:
     lang_ru: Російська
     lang_uk: Українська
