@@ -4,13 +4,40 @@ uk:
     store:
       title: Магазин
       products:
+        show:
+          labels:
+            price: Ціна
+            code: Код товару
+            is_published: Опублікований
+            title: Назва
+            slug: slug
+            male_gender: Для хлопчиків
+            female_gender: Для дівчат
+            min_age: Віком від
+            max_age: Віком до
         form:
           labels:
             price: Ціна (грн.коп)
+            code: Код товару
+            is_published: Опублікований
+            title: Назва
+            slug: slug
+            male_gender: Для хлопчиків
+            female_gender: Для дівчат
+            min_age: Віком від
+            max_age: Віком до
+            price: Ціна (копійки через точку)
         filters:
           labels:
             price_cents: Ціна в копійках
-    dashboard: "Панель керування"
+            code: Код товару
+            is_published: Опіблікований
+            title: Назва
+            male_gender: Для хлопчиків
+            female_gender: Для дівчат
+            min_age: Віком від
+            max_age: Віком до
+    dashboard: Панель керування
     dashboard_welcome:
       welcome: "Ласкаво просимо до Active Admin. Це стандартна сторінка керування сайтом."
       call_to_action: "Щоб додати сюди що-небудь, зазирніть у 'app/admin/dashboard.rb'"

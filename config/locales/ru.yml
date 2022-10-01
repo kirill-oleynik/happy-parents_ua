@@ -1,9 +1,5 @@
 ---
 ru:
-  header:
-    lang_ru: Російський
-    lang_uk: Український
-    select_language: Язык
   active_admin:
     dashboard: Dashboard
     dashboard_welcome:
@@ -18,3 +14,7 @@ ru:
               invalid_age_range: Min age must be lower than max age
             slug:
               bad_slug: Should contain only downcase letters, numbers & dashes
+  header:
+    lang_ru: Російський
+    lang_uk: Український
+    select_language: Язык
