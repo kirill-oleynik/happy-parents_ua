@@ -4,7 +4,9 @@ ActiveAdmin.register Product do
   menu parent: I18n.t('active_admin.store.title')
   actions :all
   permit_params %i[
-    code title
+    code
+    title
+    title_ru
     slug
     price
     male_gender
@@ -66,6 +68,8 @@ ActiveAdmin.register Product do
                  label: t('active_admin.store.products.form.labels.is_published')
       form.input :title,
                  label: t('active_admin.store.products.form.labels.title')
+      form.input :title_ru,
+                 label: t('active_admin.store.products.form.labels.title_ru')
       form.input :slug,
                  label: t('active_admin.store.products.form.labels.slug')
       form.input :male_gender,

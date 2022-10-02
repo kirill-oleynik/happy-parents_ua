@@ -4,10 +4,10 @@ RSpec.describe Product, type: :model do
   subject(:product) { build(:product) }
 
   describe 'validations' do
-    %i[code title price_cents slug].map do |attribute|
+    %i[code title title_ru price_cents slug].map do |attribute|
       it { is_expected.to validate_presence_of(attribute) }
     end
-    %i[code slug title].map do |attribute|
+    %i[code slug title title_ru].map do |attribute|
       it { is_expected.to validate_uniqueness_of(attribute) }
     end
     it { is_expected.to validate_numericality_of(:price_cents).is_greater_than(0) }

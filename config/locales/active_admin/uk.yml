@@ -20,7 +20,8 @@ uk:
             price: Ціна (грн.коп)
             code: Код товару
             is_published: Опублікований
-            title: Назва
+            title: Назва товру
+            title_ru: Название товара
             slug: slug
             male_gender: Для хлопчиків
             female_gender: Для дівчат

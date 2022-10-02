@@ -9,7 +9,7 @@ class Product < ApplicationRecord
 
   monetize :price_cents
 
-  validates :code, :title, presence: true, uniqueness: true
+  validates :code, :title, :title_ru, presence: true, uniqueness: true
   validates :slug, presence: true, uniqueness: true, format: { with: SLUG_REGEXP, message: :bad_slug }
   validates :price_cents, presence: true, numericality: { greater_than: 0 }
   validates :min_age, numericality: { greater_than_or_equal_to: 0 }
