@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   scope '(:locale)', locale: /#{I18n.available_locales.join('|')}/ do
     root to: 'pages#home'
+    resources :products, only: %i[index show], param: :slug
   end
 end
