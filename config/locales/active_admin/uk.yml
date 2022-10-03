@@ -4,6 +4,9 @@ uk:
     store:
       title: Магазин
       products:
+        index:
+          actions:
+            show_in_app: Показати на сайті
         show:
           labels:
             price: Ціна

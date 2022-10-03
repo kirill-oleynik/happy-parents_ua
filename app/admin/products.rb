@@ -23,7 +23,10 @@ ActiveAdmin.register Product do
     column :is_published
     column :title
     column :price
-    actions
+    actions default: true do |product|
+      link_to t('active_admin.store.products.index.actions.show_in_app'), product_path(product.slug), target: '_blank',
+                                                                                                      rel: 'noopener'
+    end
   end
   # ================== show page =======================
   show do
