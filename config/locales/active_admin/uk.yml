@@ -5,6 +5,12 @@ uk:
       title: Магазин
       products:
         index:
+          table:
+            column_labels:
+              code: Код товару
+              is_published: Опублікований
+              title: Назва
+              price: Ціна
           actions:
             show_in_app: Показати на сайті
         show:

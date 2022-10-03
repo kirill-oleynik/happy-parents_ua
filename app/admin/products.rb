@@ -19,10 +19,10 @@ ActiveAdmin.register Product do
   # ================== index page =======================
   index do
     selectable_column
-    column :code
-    column :is_published
-    column :title
-    column :price
+    column t('active_admin.store.products.index.table.column_labels.code'), :code
+    column t('active_admin.store.products.index.table.column_labels.is_published'), :is_published
+    column t('active_admin.store.products.index.table.column_labels.title'), :title
+    column t('active_admin.store.products.index.table.column_labels.price'), :price
     actions default: true do |product|
       link_to t('active_admin.store.products.index.actions.show_in_app'), product_path(product.slug), target: '_blank',
                                                                                                       rel: 'noopener'
