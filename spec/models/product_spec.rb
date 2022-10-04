@@ -3,6 +3,10 @@
 RSpec.describe Product, type: :model do
   subject(:product) { build(:product) }
 
+  describe 'associations' do
+    it { is_expected.to belong_to(:category) }
+  end
+
   describe 'validations' do
     %i[code title title_ru price_cents slug].map do |attribute|
       it { is_expected.to validate_presence_of(attribute) }

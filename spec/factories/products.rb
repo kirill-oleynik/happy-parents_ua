@@ -2,6 +2,7 @@
 
 FactoryBot.define do
   factory :product do
+    category
     sequence(:code) { |number| "#{Faker::Lorem.word}#{number}" }
     sequence(:title) { |number| "#{Faker::Lorem.words(number: 2).join(' ')} #{number}" }
     sequence(:title_ru) { |number| "#{Faker::Lorem.words(number: 2).join(' ')} #{number}" }
