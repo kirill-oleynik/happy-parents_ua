@@ -1,52 +1,10 @@
 ---
 uk:
   active_admin:
+    actions:
+      show_in_app: Відкрити на сайті
     store:
       title: Магазин
-      products:
-        index:
-          table:
-            column_labels:
-              code: Код товару
-              is_published: Опублікований
-              title: Назва
-              price: Ціна
-          actions:
-            show_in_app: Показати на сайті
-        show:
-          labels:
-            price: Ціна
-            code: Код товару
-            is_published: Опублікований
-            title: Назва
-            slug: slug
-            male_gender: Для хлопчиків
-            female_gender: Для дівчат
-            min_age: Віком від
-            max_age: Віком до
-        form:
-          labels:
-            price: Ціна (грн.коп)
-            code: Код товару
-            is_published: Опублікований
-            title: Назва товру
-            title_ru: Название товара
-            slug: slug
-            male_gender: Для хлопчиків
-            female_gender: Для дівчат
-            min_age: Віком від
-            max_age: Віком до
-            price: Ціна (копійки через точку)
-        filters:
-          labels:
-            price_cents: Ціна в копійках
-            code: Код товару
-            is_published: Опіблікований
-            title: Назва
-            male_gender: Для хлопчиків
-            female_gender: Для дівчат
-            min_age: Віком від
-            max_age: Віком до
     dashboard: Панель керування
     dashboard_welcome:
       welcome: "Ласкаво просимо до Active Admin. Це стандартна сторінка керування сайтом."
