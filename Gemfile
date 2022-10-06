@@ -40,7 +40,7 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 6.2'
   gem 'faker', '~> 2.23'
   gem 'fuubar', '~> 2.5', '>= 2.5.1'
-  gem 'lefthook', '~> 1.0', '>= 1.0.5'
+  gem 'lefthook', '~> 1.1'
   gem 'pry', '~> 0.14.1'
   gem 'reek', '~> 6.1', '>= 6.1.1'
   gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
