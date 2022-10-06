@@ -57,26 +57,16 @@ ActiveAdmin.register Product do
   # ================== forms =======================
   form do |form|
     form.inputs do
-      form.input :code,
-                 label: t('active_admin.store.products.labels.code')
-      form.input :is_published,
-                 label: t('active_admin.store.products.labels.is_published')
-      form.input :title,
-                 label: t('active_admin.store.products.labels.title')
-      form.input :title_ru,
-                 label: t('active_admin.store.products.labels.title_ru')
-      form.input :slug,
-                 label: t('active_admin.store.products.labels.slug')
-      form.input :male_gender,
-                 label: t('active_admin.store.products.labels.male_gender')
-      form.input :female_gender,
-                 label: t('active_admin.store.products.labels.female_gender')
-      form.input :min_age,
-                 label: t('active_admin.store.products.labels.min_age')
-      form.input :max_age,
-                 label: t('active_admin.store.products.labels.max_age')
-      form.input :price,
-                 label: t('active_admin.store.products.labels.price_form')
+      form.input :code,         label: t('active_admin.store.products.labels.code')
+      form.input :is_published, label: t('active_admin.store.products.labels.is_published')
+      form.input :title,        label: t('active_admin.store.products.labels.title')
+      form.input :title_ru,     label: t('active_admin.store.products.labels.title_ru')
+      form.input :slug,         label: t('active_admin.store.products.labels.slug')
+      form.input :male_gender,  label: t('active_admin.store.products.labels.male_gender')
+      form.input :female_gender,label: t('active_admin.store.products.labels.female_gender')
+      form.input :min_age,      label: t('active_admin.store.products.labels.min_age')
+      form.input :max_age,      label: t('active_admin.store.products.labels.max_age')
+      form.input :price,        label: t('active_admin.store.products.labels.price_form')
       form.semantic_errors
       form.actions
     end
