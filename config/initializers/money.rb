@@ -86,7 +86,7 @@ MoneyRails.configure do |config|
   #
   # Example (using default localization from rails-i18n):
   #
-  I18n.locale = :en
+  I18n.locale = :uk
   # Money.new(10_000_00, 'USD').format # => $10,000.00
   # I18n.locale = :es
   # Money.new(10_000_00, 'USD').format # => $10.000,00

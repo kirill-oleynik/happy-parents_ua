@@ -1,0 +1,19 @@
+---
+uk:
+  active_admin:
+    store:
+      products:
+        labels:
+          code: Код товару
+          category: Категорія
+          is_published: Опублікований
+          title: Назва товару
+          title_ru: Название товара
+          price: Ціна
+          slug: slug
+          male_gender: Для хлопчиків
+          female_gender: Для дівчат
+          min_age: Віком від
+          max_age: Віком до
+          price_cents: Ціна в копійках
+          price_form: Ціна(копійки через точку)

@@ -11,6 +11,11 @@
   </head>
 
   <body>
+    <p>
+    <%= I18n.t('header.select_language') %> :
+    <%=link_to I18n.t('header.lang_uk'), { locale: :uk } %>,
+    <%=link_to I18n.t('header.lang_ru'), { locale: :ru } %>
+    </p>
     <%= yield %>
   </body>
 </html>
