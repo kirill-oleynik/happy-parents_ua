@@ -45,23 +45,15 @@ ActiveAdmin.register Product do
   end
   # end
   # ================== filters =======================
-  filter :code,
-         label: I18n.t('active_admin.store.products.labels.code')
-  filter :slug
-  filter :is_published,
-         label: I18n.t('active_admin.store.products.labels.is_published')
-  filter :title,
-         label: I18n.t('active_admin.store.products.labels.title')
-  filter :male_gender,
-         label: I18n.t('active_admin.store.products.labels.male_gender')
-  filter :female_gender,
-         label: I18n.t('active_admin.store.products.labels.female_gender')
-  filter :min_age,
-         label: I18n.t('active_admin.store.products.labels.min_age')
-  filter :max_age,
-         label: I18n.t('active_admin.store.products.labels.max_age')
-  filter :price_cents,
-         label: I18n.t('active_admin.store.products.labels.price_cents')
+  filter :code,         label: I18n.t('active_admin.store.products.labels.code')
+  filter :slug,         label: I18n.t('active_admin.store.products.labels.slug')
+  filter :is_published, label: I18n.t('active_admin.store.products.labels.is_published')
+  filter :title,        label: I18n.t('active_admin.store.products.labels.title')
+  filter :male_gender,  label: I18n.t('active_admin.store.products.labels.male_gender')
+  filter :female_gender,label: I18n.t('active_admin.store.products.labels.female_gender')
+  filter :min_age,      label: I18n.t('active_admin.store.products.labels.min_age')
+  filter :max_age,      label: I18n.t('active_admin.store.products.labels.max_age')
+  filter :price_cents,  label: I18n.t('active_admin.store.products.labels.price_cents')
   # ================== forms =======================
   form do |form|
     form.inputs do
