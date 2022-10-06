@@ -52,7 +52,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'shoulda-matchers', '~> 5.1'
+  gem 'shoulda-matchers', '~> 5.2'
 end
 
 group :development do
