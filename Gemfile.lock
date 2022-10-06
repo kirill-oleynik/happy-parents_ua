@@ -190,7 +190,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    minitest (5.16.2)
+    minitest (5.16.3)
     monetize (1.12.0)
       money (~> 6.12)
     money (6.16.0)
@@ -273,7 +273,7 @@ GEM
       kwalify (~> 0.7.0)
       parser (~> 3.1.0)
       rainbow (>= 2.0, < 4.0)
-    regexp_parser (2.5.0)
+    regexp_parser (2.6.0)
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -313,10 +313,10 @@ GEM
     rubocop-performance (1.14.3)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
-    rubocop-rails (2.15.2)
+    rubocop-rails (2.16.1)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
-      rubocop (>= 1.7.0, < 2.0)
+      rubocop (>= 1.33.0, < 2.0)
     rubocop-rspec (2.12.1)
       rubocop (~> 1.31)
     ruby-progressbar (1.11.0)
@@ -332,7 +332,7 @@ GEM
       sprockets-rails
       tilt
     sexp_processor (4.16.1)
-    shoulda-matchers (5.1.0)
+    shoulda-matchers (5.2.0)
       activesupport (>= 5.2.0)
     smart_properties (1.17.0)
     sprockets (4.1.1)
@@ -356,7 +356,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
-    unicode-display_width (2.2.0)
+    unicode-display_width (2.3.0)
     uniform_notifier (1.16.0)
     warden (1.2.9)
       rack (>= 2.0.9)
@@ -398,10 +398,10 @@ DEPENDENCIES
   rubocop (~> 1.36)
   rubocop-faker (~> 1.1)
   rubocop-performance (~> 1.14, >= 1.14.3)
-  rubocop-rails (~> 2.15, >= 2.15.2)
+  rubocop-rails (~> 2.16)
   rubocop-rspec (~> 2.12, >= 2.12.1)
   sassc-rails
-  shoulda-matchers (~> 5.1)
+  shoulda-matchers (~> 5.2)
   sprockets-rails
   stimulus-rails
   turbo-rails
