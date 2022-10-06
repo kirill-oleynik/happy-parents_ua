@@ -44,7 +44,7 @@ group :development, :test do
   gem 'pry', '~> 0.14.1'
   gem 'reek', '~> 6.1', '>= 6.1.1'
   gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
-  gem 'rubocop', '~> 1.32'
+  gem 'rubocop', '~> 1.36'
   gem 'rubocop-faker', '~> 1.1'
   gem 'rubocop-performance', '~> 1.14', '>= 1.14.3'
   gem 'rubocop-rails', '~> 2.15', '>= 2.15.2'
@@ -52,7 +52,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'shoulda-matchers', '~> 5.1'
+  gem 'shoulda-matchers', '~> 5.2'
 end
 
 group :development do
