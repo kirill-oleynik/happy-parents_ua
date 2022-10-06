@@ -44,7 +44,6 @@ ActiveAdmin.register Product do
     end
     active_admin_comments
   end
-  # end
   # ================== filters =======================
   filter :code,         label: I18n.t('active_admin.store.products.labels.code')
   filter :slug,         label: I18n.t('active_admin.store.products.labels.slug')

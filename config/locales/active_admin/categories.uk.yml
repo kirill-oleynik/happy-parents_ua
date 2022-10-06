@@ -1,0 +1,7 @@
+---
+uk:
+  active_admin:
+    store:
+      categories:
+        labels:
+          name: Назва
