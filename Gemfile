@@ -36,7 +36,7 @@ gem 'turbo-rails'
 
 group :development, :test do
   gem 'awesome_print', require: 'ap'
-  gem 'bullet', '~> 7.0', '>= 7.0.2'
+  gem 'bullet', '~> 7.0'
   gem 'factory_bot_rails', '~> 6.2'
   gem 'faker', '~> 2.23'
   gem 'fuubar', '~> 2.5', '>= 2.5.1'
@@ -61,7 +61,7 @@ group :development do
   gem 'bundler-leak', '~> 0.3.0'
   gem 'database_consistency', '~> 1.2', require: false
   gem 'fasterer', '~> 0.10.0'
-  gem 'i18n-tasks', '~> 1.0', '>= 1.0.11'
+  gem 'i18n-tasks', '~> 1.0'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
