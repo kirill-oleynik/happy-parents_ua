@@ -52,14 +52,14 @@ group :development, :test do
 end
 
 group :test do
-  gem 'shoulda-matchers', '~> 5.1'
+  gem 'shoulda-matchers', '~> 5.2'
 end
 
 group :development do
   gem 'brakeman', '~> 5.2', '>= 5.2.3'
   gem 'bundler-audit', '~> 0.9.1'
   gem 'bundler-leak', '~> 0.3.0'
-  gem 'database_consistency', '~> 1.1', '>= 1.1.15', require: false
+  gem 'database_consistency', '~> 1.2', require: false
   gem 'fasterer', '~> 0.10.0'
   gem 'i18n-tasks', '~> 1.0', '>= 1.0.11'
 
