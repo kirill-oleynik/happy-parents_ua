@@ -14,11 +14,13 @@ ActiveAdmin.register Product do
     min_age
     max_age
     is_published
+    category_id
   ]
 
   # ================== index page =======================
   index do
     selectable_column
+    column t('active_admin.store.products.labels.category'), :category
     column t('active_admin.store.products.labels.code'), :code
     column t('active_admin.store.products.labels.is_published'), :is_published
     column t('active_admin.store.products.labels.title'), :title
@@ -32,6 +34,7 @@ ActiveAdmin.register Product do
   # ================== show page =======================
   show do
     attributes_table do
+      row(t('active_admin.store.products.labels.category'), &:category)
       row(t('active_admin.store.products.labels.code'), &:code)
       row(t('active_admin.store.products.labels.title'), &:title)
       row(t('active_admin.store.products.labels.is_published'), &:is_published)
@@ -45,6 +48,7 @@ ActiveAdmin.register Product do
     active_admin_comments
   end
   # ================== filters =======================
+  filter :category,     label: I18n.t('active_admin.store.products.labels.category')
   filter :code,         label: I18n.t('active_admin.store.products.labels.code')
   filter :slug,         label: I18n.t('active_admin.store.products.labels.slug')
   filter :is_published, label: I18n.t('active_admin.store.products.labels.is_published')
@@ -57,6 +61,7 @@ ActiveAdmin.register Product do
   # ================== forms =======================
   form do |form|
     form.inputs do
+      form.input :category,         label: t('active_admin.store.products.labels.category')
       form.input :code,         label: t('active_admin.store.products.labels.code')
       form.input :is_published, label: t('active_admin.store.products.labels.is_published')
       form.input :title,        label: t('active_admin.store.products.labels.title')

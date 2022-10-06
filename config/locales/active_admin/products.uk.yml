@@ -5,6 +5,7 @@ uk:
       products:
         labels:
           code: Код товару
+          category: Категорія
           is_published: Опублікований
           title: Назва товару
           title_ru: Название товара
