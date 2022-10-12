@@ -9,6 +9,7 @@ gem 'money-rails', '~> 1.15'
 gem 'pg', '~> 1.4'
 gem 'puma', '~> 5.6'
 gem 'rails', '~> 7.0.4'
+gem 'sidekiq', '~> 6.5', '>= 6.5.7'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
