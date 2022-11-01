@@ -7,7 +7,7 @@ ruby '3.1.0'
 # General
 gem 'money-rails', '~> 1.15'
 gem 'pg', '~> 1.4'
-gem 'puma', '~> 5.6'
+gem 'puma', '~> 6.0'
 gem 'rails', '~> 7.0.4'
 gem 'sidekiq', '~> 6.5', '>= 6.5.7'
 # Use Redis adapter to run Action Cable in production
