@@ -44,7 +44,7 @@ group :development, :test do
   gem 'lefthook', '~> 1.1'
   gem 'pry', '~> 0.14.1'
   gem 'reek', '~> 6.1', '>= 6.1.1'
-  gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
+  gem 'rspec-rails', '~> 6.0'
   gem 'rubocop', '~> 1.36'
   gem 'rubocop-faker', '~> 1.1'
   gem 'rubocop-performance', '~> 1.15'
