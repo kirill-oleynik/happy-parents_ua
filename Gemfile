@@ -57,7 +57,7 @@ group :test do
 end
 
 group :development do
-  gem 'brakeman', '~> 5.2', '>= 5.2.3'
+  gem 'brakeman', '~> 5.4'
   gem 'bundler-audit', '~> 0.9.1'
   gem 'bundler-leak', '~> 0.3.0'
   gem 'database_consistency', '~> 1.2', require: false
