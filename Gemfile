@@ -39,7 +39,7 @@ group :development, :test do
   gem 'awesome_print', require: 'ap'
   gem 'bullet', '~> 7.0'
   gem 'factory_bot_rails', '~> 6.2'
-  gem 'faker', '~> 2.23'
+  gem 'faker', '~> 3.0'
   gem 'fuubar', '~> 2.5', '>= 2.5.1'
   gem 'lefthook', '~> 1.1'
   gem 'pry', '~> 0.14.1'
