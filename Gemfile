@@ -41,6 +41,7 @@ gem 'sprockets-rails'
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
+  gem 'factory_bot_rails', '~> 6.2'
   gem 'rubocop', '~> 1.51'
   gem 'rubocop-factory_bot', '~> 2.23', '>= 2.23.1'
   gem 'rubocop-faker', '~> 1.1'
