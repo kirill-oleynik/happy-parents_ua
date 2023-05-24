@@ -63,6 +63,7 @@ group :development do
   # gem "spring"
 end
 group :test do
+  gem 'bullet', '~> 7.0', '>= 7.0.7'
   gem 'fuubar', '~> 2.5', '>= 2.5.1'
   gem 'rspec-rails', '~> 6.0', '>= 6.0.2'
 end

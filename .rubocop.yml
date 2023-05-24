@@ -21,3 +21,14 @@ Style/Documentation:
     - app/models/application_record.rb
     - config/**/*
     - db/**/*
+# ===================== Metrics ====================
+Metrics/MethodLength:
+  Enabled: true
+  Exclude:
+    - db/**/*
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - db/**/*
+    - app/admin/**
+    - config/environments/development.rb

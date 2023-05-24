@@ -3,6 +3,16 @@
 require 'active_support/core_ext/integer/time'
 
 Rails.application.configure do
+  # TODO: clean up and turn on off exclusion in .rubocop.yml
+  config.after_initialize do
+    Bullet.enable        = true # enable Bullet gem, otherwise do nothing
+    Bullet.alert         = true # pop up a JavaScript alert in the browser
+    Bullet.bullet_logger = true # log to the Bullet log file (Rails.root/log/bullet.log)
+    Bullet.console       = false # log warnings to your browser's console.log
+    Bullet.rails_logger  = false # add warnings directly to the Rails log
+    Bullet.add_footer    = false # details in the bottom left corner of the page
+  end
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded any time
