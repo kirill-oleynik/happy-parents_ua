@@ -41,7 +41,9 @@ gem 'sprockets-rails'
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
+  gem 'bullet', '~> 7.0', '>= 7.0.7'
   gem 'factory_bot_rails', '~> 6.2'
+  gem 'faker', '~> 3.2'
   gem 'rubocop', '~> 1.51'
   gem 'rubocop-factory_bot', '~> 2.23', '>= 2.23.1'
   gem 'rubocop-faker', '~> 1.1'
@@ -64,7 +66,6 @@ group :development do
   # gem "spring"
 end
 group :test do
-  gem 'bullet', '~> 7.0', '>= 7.0.7'
   gem 'fuubar', '~> 2.5', '>= 2.5.1'
   gem 'rspec-rails', '~> 6.0', '>= 6.0.2'
   gem 'shoulda-matchers', '~> 5.3'
