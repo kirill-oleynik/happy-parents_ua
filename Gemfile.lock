@@ -259,6 +259,7 @@ DEPENDENCIES
   rubocop-thread_safety (~> 0.5.1)
   shoulda-matchers (~> 5.3)
   sprockets-rails
+  tzinfo-data
 
 RUBY VERSION
    ruby 3.1.3p185
