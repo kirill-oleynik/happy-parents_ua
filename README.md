@@ -1,24 +1,9 @@
-# README
+# Happy Parents webstore
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Project setup
+1. Place project credential keys at `config/credentials/`
+2. Create DB and run migrations: 
+- `psql`
+- `CREATE ROLE <db_username> SUPERUSER CREATEDB LOGIN PASSWORD '<password>';` (`username` and `password` can be found in project credentials by running `rails credentials:edit --environment development`)
+- `\q`
+- `rails db:create db:migrate db:seed`
