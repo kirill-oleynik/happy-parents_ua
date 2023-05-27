@@ -70,6 +70,7 @@ GEM
     awesome_print (1.9.2)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
+    brakeman (6.0.0)
     builder (3.2.4)
     bullet (7.0.7)
       activesupport (>= 3.0.0)
@@ -252,6 +253,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print (~> 1.9, >= 1.9.2)
   bootsnap
+  brakeman (~> 6.0)
   bullet (~> 7.0, >= 7.0.7)
   bundler-audit (~> 0.9.1)
   factory_bot_rails (~> 6.2)
