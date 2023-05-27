@@ -1,0 +1,11 @@
+detectors:
+  IrresponsibleModule:
+    exclude:
+      - 'HappyParentsUa::Application'
+      - 'ApplicationRecord'
+      - 'ApplicationHelper'
+      - 'ApplicationJob'
+      - 'ApplicationController'
+      - 'ApplicationCable::Channel'
+      - 'ApplicationCable::Connection'
+      - 'ApplicationMailer'
