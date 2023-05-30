@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# rubocop:disable Lint/EmptyBlock
 Rails.application.routes.draw do
   scope '(:locale)', locale: /#{I18n.available_locales.join('|')}/ do
+    devise_for :admins, ActiveAdmin::Devise.config
+    ActiveAdmin.routes(self)
   end
-  # rubocop:enable Lint/EmptyBlock
 end
