@@ -25,7 +25,7 @@ module HappyParentsUa
   class Application < Rails::Application
     config.load_defaults 7.0
     config.time_zone = 'Kyiv'
-    config.i18n.available_locales = %i[uk ru]
+    config.i18n.available_locales = %i[uk ru en]
     config.i18n.default_locale = :uk
     config.i18n.load_path += Dir[Rails.root.join('config/locales/**/*.yml')]
 

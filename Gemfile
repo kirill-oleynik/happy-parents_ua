@@ -11,8 +11,11 @@ gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 gem 'rails-i18n', '~> 7.0', '>= 7.0.7'
 
-# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem 'sprockets-rails'
+# Management
+gem 'activeadmin', '~> 2.13', '>= 2.13.1'
+gem 'devise', '~> 4.9', '>= 4.9.2'
+gem 'devise-i18n', '~> 1.11'
+gem 'pundit', '~> 2.3'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 # gem "importmap-rails"
@@ -29,11 +32,9 @@ gem 'sprockets-rails'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
-# Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-# gem "bcrypt", "~> 3.1.7"
-
-# Use Sass to process CSS
-# gem "sassc-rails"
+# Use Assets handling
+gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
+gem 'sprockets-rails', '~> 3.4', '>= 3.4.2'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -69,6 +70,7 @@ group :development do
 end
 group :test do
   gem 'fuubar', '~> 2.5', '>= 2.5.1'
+  gem 'pundit-matchers', '~> 2.3'
   gem 'rspec-rails', '~> 6.0', '>= 6.0.2'
   gem 'shoulda-matchers', '~> 5.3'
 end

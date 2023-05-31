@@ -11,7 +11,7 @@ AllCops:
   TargetRailsVersion: 7.0.4
   NewCops: enable
 
-# ===================== Rails ====================
+# ===================== Style ====================
 Style/Documentation:
   Enabled: true
   Exclude:
@@ -32,3 +32,15 @@ Metrics/BlockLength:
     - db/**/*
     - app/admin/**
     - config/environments/development.rb
+    - app/controllers/concerns/localeable.rb
+
+# ===================== Metrics ====================
+Naming/BlockForwarding:
+  Enabled: true
+  Exclude:
+  - app/controllers/concerns/localeable.rb
+# ===================== Style ====================
+Style/MultilineBlockChain:
+  Enabled: true
+  Exclude:
+  - app/controllers/concerns/localeable.rb

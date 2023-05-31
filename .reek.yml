@@ -1,11 +1,17 @@
+---
 detectors:
   IrresponsibleModule:
     exclude:
       - 'HappyParentsUa::Application'
-      - 'ApplicationRecord'
       - 'ApplicationHelper'
-      - 'ApplicationJob'
       - 'ApplicationController'
       - 'ApplicationCable::Channel'
       - 'ApplicationCable::Connection'
+      - 'ApplicationJob'
       - 'ApplicationMailer'
+      - 'ApplicationRecord'
+  NestedIterators:
+    max_allowed_nesting: 2
+exclude_paths:
+  - db/**/*
+  - app/controllers/concerns/localeable.rb
