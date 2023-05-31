@@ -11,7 +11,7 @@ AllCops:
   TargetRailsVersion: 7.0.4
   NewCops: enable
 
-# ===================== Rails ====================
+# ===================== Style ====================
 Style/Documentation:
   Enabled: true
   Exclude:

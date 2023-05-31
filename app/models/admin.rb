@@ -15,8 +15,10 @@ class Admin < ApplicationRecord
             uniqueness: { case_sensitive: false },
             format: { with: URI::MailTo::EMAIL_REGEXP }
 
+  # rubocop:disable Rails/UniqueValidationWithoutIndex
   validates :phone,
             allow_blank: true,
             uniqueness: { case_sensitive: false },
             format: { with: PHONE_FORMAT }
+  # rubocop:enable Rails/UniqueValidationWithoutIndex
 end
