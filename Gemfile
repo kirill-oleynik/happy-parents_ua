@@ -72,6 +72,6 @@ end
 group :test do
   gem 'fuubar', '~> 2.5', '>= 2.5.1'
   gem 'pundit-matchers', '~> 2.3'
-  gem 'rspec-rails', '~> 6.0', '>= 6.0.2'
+  gem 'rspec-rails', '~> 6.0'
   gem 'shoulda-matchers', '~> 5.3'
 end
