@@ -12,5 +12,12 @@ FactoryBot.define do
     role { Faker::Number.between(from: 0, to: 1) }
 
     password { Faker::Internet.password }
+
+    trait :with_superadmin_role do
+      role { 0 }
+    end
+    trait :with_admin_role do
+      role { 1 }
+    end
   end
 end
