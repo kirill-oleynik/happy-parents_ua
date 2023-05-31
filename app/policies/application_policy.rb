@@ -2,6 +2,7 @@
 
 # Basic Policy to be inhereted from
 class ApplicationPolicy
+  ALL_ADMINS_ALLOWED_PAGE = 'Dashboard'
   attr_reader :user, :record
 
   def initialize(user, record)

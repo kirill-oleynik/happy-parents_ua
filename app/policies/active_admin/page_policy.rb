@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
 module ActiveAdmin
+  # ActiveAdmin Page policy
   class PagePolicy < ApplicationPolicy
+    def index?
+      false
+    end
+
     def show?
-      case record.name
-      when 'Dashboard'
-        true
-      else
-        false
-      end
+      record.name == ALL_ADMINS_ALLOWED_PAGE
     end
   end
 end
