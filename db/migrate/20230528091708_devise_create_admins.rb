@@ -24,7 +24,6 @@ class DeviseCreateAdmins < ActiveRecord::Migration[7.0]
     end
 
     add_index :admins, :email,                unique: true
-    add_index :admins, :phone,                unique: true
     add_index :admins, :reset_password_token, unique: true
   end
 end
