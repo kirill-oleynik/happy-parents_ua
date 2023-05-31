@@ -77,7 +77,7 @@ ActiveAdmin.setup do |config|
   # config.pundit_policy_namespace = :admin
 
   config.authorization_adapter = ActiveAdmin::PunditAdapter
-  config.pundit_default_policy = 'ActiveAdmin::ApplicationPolicy'
+  config.pundit_default_policy = 'ApplicationPolicy'
   config.default_per_page = 25
 
   # You can specify a method to be called on unauthorized access.
