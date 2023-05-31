@@ -8,20 +8,8 @@ ActiveAdmin.register Admin do
     column :role
     column :email
     column :phone
-    column :current_sign_in_at
-    column :sign_in_count
     actions
   end
-  # show do
-  #   attributes_table do
-  #     row :role
-  #     row :email
-  #     row :phone
-  #     row :current_sign_in_at
-  #     row :sign_in_count
-  #     row :created_at
-  #   end
-  # end
 
   filter :email
   filter :phone

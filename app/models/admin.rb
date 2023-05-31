@@ -4,7 +4,7 @@
 class Admin < ApplicationRecord
   PHONE_FORMAT = /\A\d{12}\z/
 
-  devise :database_authenticatable, :recoverable
+  devise :database_authenticatable, :recoverable, :trackable
 
   enum role: { superadmin: 0, admin: 1 }
 
