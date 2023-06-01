@@ -29,8 +29,6 @@ Metrics/MethodLength:
 Metrics/BlockLength:
   Enabled: true
   Exclude:
-    - db/**/*
-    - app/admin/**
     - config/environments/development.rb
     - app/controllers/concerns/localeable.rb
 

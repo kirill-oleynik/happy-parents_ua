@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-RSpec.describe Admin do
-  subject(:admin) { build(:admin) }
+RSpec.describe User do
+  subject(:user) { build(:user) }
 
   describe 'validations' do
     %i[email role password].map do |attribute|
@@ -25,6 +25,6 @@ RSpec.describe Admin do
   end
 
   it 'defines expected roles' do
-    expect(admin).to define_enum_for(:role).with_values(superadmin: 0, admin: 1)
+    expect(user).to define_enum_for(:role).with_values(superadmin: 0, admin: 1)
   end
 end
