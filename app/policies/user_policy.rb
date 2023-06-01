@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Defines user permissions to interact with Admin entity
-class AdminPolicy < ApplicationPolicy
+# Defines user permissions to interact with User entity
+class UserPolicy < ApplicationPolicy
   def index?
     user.superadmin? || user.admin?
   end

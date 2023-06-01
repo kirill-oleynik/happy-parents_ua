@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Application Administrator entity
-class Admin < ApplicationRecord
+# Application User entity (management)
+class User < ApplicationRecord
   PHONE_FORMAT = /\A\d{12}\z/
 
   devise :database_authenticatable, :recoverable, :trackable

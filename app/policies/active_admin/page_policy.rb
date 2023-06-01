@@ -8,7 +8,7 @@ module ActiveAdmin
     end
 
     def show?
-      record.name == ALL_ADMINS_ALLOWED_PAGE
+      record.name == ALL_USERS_ALLOWED_PAGE
     end
   end
 end

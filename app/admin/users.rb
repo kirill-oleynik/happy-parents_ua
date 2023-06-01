@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ActiveAdmin.register Admin do
+ActiveAdmin.register User do
   permit_params :email, :phone, :password, :role
 
   index do
@@ -13,7 +13,7 @@ ActiveAdmin.register Admin do
 
   filter :email
   filter :phone
-  filter :role, as: :select, collection: Admin.roles
+  filter :role, as: :select, collection: User.roles
 
   form do |f|
     f.inputs do

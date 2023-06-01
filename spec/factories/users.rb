@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 FactoryBot.define do
-  factory :admin do
+  factory :user do
     sequence :email do |n|
       "#{Faker::Internet.unique.email}#{n}"
     end

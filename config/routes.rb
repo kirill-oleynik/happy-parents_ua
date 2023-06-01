@@ -2,7 +2,7 @@
 
 Rails.application.routes.draw do
   scope '(:locale)', locale: /#{I18n.available_locales.join('|')}/ do
-    devise_for :admins, ActiveAdmin::Devise.config
+    devise_for :users, ActiveAdmin::Devise.config
     ActiveAdmin.routes(self)
   end
 end
