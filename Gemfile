@@ -45,7 +45,7 @@ group :development, :test do
   gem 'awesome_print', '~> 1.9', '>= 1.9.2'
   gem 'bullet', '~> 7.0', '>= 7.0.7'
   gem 'factory_bot_rails', '~> 6.2'
-  gem 'faker', '~> 3.2'
+  gem 'ffaker', '~> 2.21'
   gem 'pry-rails', '~> 0.3.9'
   gem 'reek', '~> 6.1', '>= 6.1.4'
   gem 'rubocop', '~> 1.51'
