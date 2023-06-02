@@ -34,6 +34,7 @@ gem 'pundit', '~> 2.3'
 # gem "kredis"
 
 # Use Assets handling
+gem 'bootstrap', '~> 5.3.0.alpha3'
 gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 gem 'sprockets-rails', '~> 3.4', '>= 3.4.2'
 
