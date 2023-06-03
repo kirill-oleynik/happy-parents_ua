@@ -3,15 +3,13 @@
 FactoryBot.define do
   factory :user do
     sequence :email do |n|
-      "#{Faker::Internet.unique.email}#{n}"
+      "#{FFaker::Internet.unique.email}#{n}"
     end
 
-    sequence :phone do |n|
-      "#{Faker::Number.number(digits: 11)}#{n}"
-    end
-    role { Faker::Number.between(from: 0, to: 1) }
+    phone { Array.new(12) { rand(10) }.join }
+    role { rand(0..1) }
 
-    password { Faker::Internet.password }
+    password { FFaker::Internet.password }
 
     trait :with_superadmin_role do
       role { 0 }

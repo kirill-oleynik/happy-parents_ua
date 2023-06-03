@@ -20,8 +20,8 @@ RSpec.describe User do
       it { is_expected.not_to allow_value(value).for(:phone) }
     end
 
-    it { is_expected.to allow_value(Faker::Internet.email).for(:email) }
-    it { is_expected.not_to allow_value(Faker::Lorem.word).for(:email) }
+    it { is_expected.to allow_value(FFaker::Internet.email).for(:email) }
+    it { is_expected.not_to allow_value(FFaker::Lorem.word).for(:email) }
   end
 
   it 'defines expected roles' do

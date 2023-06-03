@@ -34,6 +34,7 @@ gem 'pundit', '~> 2.3'
 # gem "kredis"
 
 # Use Assets handling
+gem 'bootstrap', '~> 5.3.0.alpha3'
 gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 gem 'sprockets-rails', '~> 3.4', '>= 3.4.2'
 
@@ -44,7 +45,7 @@ group :development, :test do
   gem 'awesome_print', '~> 1.9', '>= 1.9.2'
   gem 'bullet', '~> 7.0', '>= 7.0.7'
   gem 'factory_bot_rails', '~> 6.2'
-  gem 'faker', '~> 3.2'
+  gem 'ffaker', '~> 2.21'
   gem 'pry-rails', '~> 0.3.9'
   gem 'reek', '~> 6.1', '>= 6.1.4'
   gem 'rubocop', '~> 1.51'
