@@ -29,15 +29,3 @@ Metrics/BlockLength:
   Enabled: true
   Exclude:
     - config/environments/development.rb
-    - app/controllers/concerns/localeable.rb
-
-# ===================== Metrics ====================
-Naming/BlockForwarding:
-  Enabled: true
-  Exclude:
-  - app/controllers/concerns/localeable.rb
-# ===================== Style ====================
-Style/MultilineBlockChain:
-  Enabled: true
-  Exclude:
-  - app/controllers/concerns/localeable.rb
