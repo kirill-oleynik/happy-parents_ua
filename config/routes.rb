@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  scope '(:locale)', locale: /#{I18n.available_locales.join('|')}/ do
-    devise_for :users, ActiveAdmin::Devise.config
-    ActiveAdmin.routes(self)
-    root 'pages#index'
-  end
+  devise_for :users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  root 'pages#index'
+  post 'locales/:locale', to: 'locales#create', as: 'set_locale'
 end

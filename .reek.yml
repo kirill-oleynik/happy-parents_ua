@@ -14,4 +14,3 @@ detectors:
     max_allowed_nesting: 2
 exclude_paths:
   - db/**/*
-  - app/controllers/concerns/localeable.rb
