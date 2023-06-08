@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-ActiveRecord::Schema[7.0].define(version: 20_230_601_111_622) do
+ActiveRecord::Schema[7.0].define(version: 20_230_608_114_414) do
   enable_extension 'plpgsql'
 
   create_table 'active_admin_comments', force: :cascade do |t|
@@ -15,6 +15,13 @@ ActiveRecord::Schema[7.0].define(version: 20_230_601_111_622) do
     t.index %w[author_type author_id], name: 'index_active_admin_comments_on_author'
     t.index ['namespace'], name: 'index_active_admin_comments_on_namespace'
     t.index %w[resource_type resource_id], name: 'index_active_admin_comments_on_resource'
+  end
+
+  create_table 'suppliers', force: :cascade do |t|
+    t.string 'name', null: false
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.index ['name'], name: 'index_suppliers_on_name', unique: true
   end
 
   create_table 'users', force: :cascade do |t|

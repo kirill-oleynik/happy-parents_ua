@@ -28,4 +28,5 @@ Metrics/MethodLength:
 Metrics/BlockLength:
   Enabled: true
   Exclude:
+    - db/schema.rb
     - config/environments/development.rb

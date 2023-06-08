@@ -1,4 +1,9 @@
 uk:
+  activerecord:
+    models:
+      supplier:
+        one: Постачальник
+        other: Постачальники
   copyright: "Ⓒ Happy Parents %{year}"
   uk: Українська
   ru: Кацапська
