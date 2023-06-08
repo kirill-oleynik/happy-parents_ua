@@ -2,9 +2,7 @@
 
 FactoryBot.define do
   factory :user do
-    sequence :email do |n|
-      "#{FFaker::Internet.unique.email}#{n}"
-    end
+    sequence(:email) { |n| "#{FFaker::Internet.unique.email}#{n}" }
 
     phone { Array.new(12) { rand(10) }.join }
     role { rand(0..1) }
