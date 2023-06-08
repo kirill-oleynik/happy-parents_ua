@@ -4,6 +4,9 @@ ru:
       supplier:
         one: Поставщик
         other: Поставщики
+      manufacturer:
+        one: Производитель
+        other: Производители
   copyright: "Ⓒ Happy Parents %{year}"
   uk: Украинский
   ru: Российский
