@@ -1,0 +1,9 @@
+uk:
+  activerecord:
+    models:
+      supplier:
+        one: Постачальник
+        other: Постачальники
+      manufacturer:
+        one: Виробник
+        other: Виробники
