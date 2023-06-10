@@ -7,3 +7,6 @@ uk:
       manufacturer:
         one: Виробник
         other: Виробники
+      country:
+        one: Країна
+        other: Країни

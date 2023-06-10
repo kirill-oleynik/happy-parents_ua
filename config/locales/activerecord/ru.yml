@@ -7,3 +7,6 @@ ru:
       manufacturer:
         one: Производитель
         other: Производители
+      manufacturer:
+        one: Страна
+        other: Страны
