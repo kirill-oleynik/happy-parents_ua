@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 ActiveAdmin.register Supplier do
+  menu parent: I18n.t('active_admin.menu.store')
+
   permit_params :name
 
   index do
