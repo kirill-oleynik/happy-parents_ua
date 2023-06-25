@@ -10,3 +10,8 @@ uk:
       country:
         one: Країна
         other: Країни
+    attributes:
+      country:
+        name: Назва
+        name_uk: Назва
+        name_ru: Название

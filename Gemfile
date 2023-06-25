@@ -11,6 +11,7 @@ gem 'pg', '~> 1.1'
 gem 'puma', '~> 6.3'
 gem 'rails', '~> 7.0.5'
 gem 'rails-i18n', '~> 7.0', '>= 7.0.7'
+gem 'mobility', '~> 1.2', '>= 1.2.9'
 
 # Management
 gem 'activeadmin', '~> 2.13', '>= 2.13.1'

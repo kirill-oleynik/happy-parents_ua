@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 20_230_610_085_707) do
+ActiveRecord::Schema[7.0].define(version: 20_230_625_092_929) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -31,10 +31,20 @@ ActiveRecord::Schema[7.0].define(version: 20_230_610_085_707) do
   end
 
   create_table 'countries', force: :cascade do |t|
-    t.string 'name', null: false
+    t.string 'name'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
     t.index ['name'], name: 'index_countries_on_name', unique: true
+  end
+
+  create_table 'country_translations', force: :cascade do |t|
+    t.string 'name'
+    t.string 'locale', null: false
+    t.bigint 'country_id', null: false
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.index %w[country_id locale], name: 'index_country_translations_on_country_id_and_locale', unique: true
+    t.index ['locale'], name: 'index_country_translations_on_locale'
   end
 
   create_table 'manufacturers', force: :cascade do |t|
@@ -71,5 +81,6 @@ ActiveRecord::Schema[7.0].define(version: 20_230_610_085_707) do
     t.index ['reset_password_token'], name: 'index_users_on_reset_password_token', unique: true
   end
 
+  add_foreign_key 'country_translations', 'countries'
   add_foreign_key 'manufacturers', 'countries'
 end

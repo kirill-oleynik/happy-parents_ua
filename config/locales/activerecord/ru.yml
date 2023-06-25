@@ -10,3 +10,8 @@ ru:
       manufacturer:
         one: Страна
         other: Страны
+    attributes:
+      country:
+        name: Название
+        name_uk: Назва
+        name_ru: Название
