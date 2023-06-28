@@ -10,8 +10,15 @@ uk:
       country:
         one: Країна
         other: Країни
+      trade_mark:
+        one: Торгівельна марка
+        other: Торгівельні марки
     attributes:
       country:
+        name: Назва
+        name_uk: Назва
+        name_ru: Название
+      trade_mark:
         name: Назва
         name_uk: Назва
         name_ru: Название

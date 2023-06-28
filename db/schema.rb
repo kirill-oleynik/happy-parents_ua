@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 20_230_625_092_929) do
+ActiveRecord::Schema[7.0].define(version: 20_230_628_073_744) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -61,6 +61,13 @@ ActiveRecord::Schema[7.0].define(version: 20_230_625_092_929) do
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
     t.index ['name'], name: 'index_suppliers_on_name', unique: true
+  end
+
+  create_table 'trade_marks', force: :cascade do |t|
+    t.string 'name', null: false
+    t.bigint 'manufacturer_id'
+    t.index ['manufacturer_id'], name: 'index_trade_marks_on_manufacturer_id'
+    t.index ['name'], name: 'index_trade_marks_on_name', unique: true
   end
 
   create_table 'users', force: :cascade do |t|
