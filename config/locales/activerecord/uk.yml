@@ -22,3 +22,8 @@ uk:
         name: Назва
         name_uk: Назва
         name_ru: Название
+      manufacturer:
+        name: Назва
+        country: Країна
+      supplier:
+        name: назва
