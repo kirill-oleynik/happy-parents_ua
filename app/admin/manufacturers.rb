@@ -12,7 +12,10 @@ ActiveAdmin.register Manufacturer do
     actions
   end
 
-  filter :name
+  %i[
+    name
+    country
+  ].each { |attribute| filter(attribute) }
 
   form do |f|
     f.inputs do
