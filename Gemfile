@@ -52,7 +52,7 @@ group :development, :test do
   gem 'rubocop-factory_bot', '~> 2.23', '>= 2.23.1'
   gem 'rubocop-faker', '~> 1.1'
   gem 'rubocop-performance', '~> 1.18'
-  gem 'rubocop-rails', '~> 2.19', '>= 2.19.1'
+  gem 'rubocop-rails', '~> 2.20'
   gem 'rubocop-rspec', '~> 2.22'
   gem 'rubocop-thread_safety', '~> 0.5.1'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
