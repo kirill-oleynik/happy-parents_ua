@@ -5,6 +5,8 @@ RSpec.describe Manufacturer do
 
   describe 'associations' do
     it { is_expected.to belong_to(:country) }
+    it { is_expected.to have_many(:manufacturer_supply_agreements).dependent(:destroy) }
+    it { is_expected.to have_many(:suppliers).through(:manufacturer_supply_agreements) }
   end
 
   describe 'validations' do

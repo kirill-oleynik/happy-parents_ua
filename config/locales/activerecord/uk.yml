@@ -13,6 +13,9 @@ uk:
       trade_mark:
         one: Торгівельна марка
         other: Торгівельні марки
+      manufacturer_supply_agreement:
+        one: Угода на поставки Виробника
+        other: Угоди на поставки Виробників
     attributes:
       country:
         name: Назва
@@ -27,3 +30,6 @@ uk:
         country: Країна
       supplier:
         name: назва
+      manufacturer_supply_agreement:
+        manufacturer: Виробник
+        supplier: Постачальник

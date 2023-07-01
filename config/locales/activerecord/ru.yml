@@ -13,6 +13,9 @@ ru:
       trade_mark:
         one: Торговая марка
         other: Торговые марки
+      manufacturer_supply_agreement:
+        one: Договор на поставки Производителя
+        other: Договора на поставки Производителей
     attributes:
       country:
         name: Название
@@ -27,3 +30,6 @@ ru:
         country: Страна
       supplier:
         name: название
+      manufacturer_supply_agreement:
+        manufacturer: Производитель
+        supplier: Поставщик
