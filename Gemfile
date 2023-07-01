@@ -9,7 +9,7 @@ gem 'bootsnap', require: false
 gem 'draper', '~> 4.0', '>= 4.0.2'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 6.3'
-gem 'rails', '~> 7.0.5'
+gem 'rails', '~> 7.0.6'
 gem 'rails-i18n', '~> 7.0', '>= 7.0.7'
 
 # Management
