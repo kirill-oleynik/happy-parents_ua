@@ -7,16 +7,17 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.3'
 gem 'bootsnap', require: false
 gem 'draper', '~> 4.0', '>= 4.0.2'
+gem 'mobility', '~> 1.2', '>= 1.2.9'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 6.3'
 gem 'rails', '~> 7.0.5'
 gem 'rails-i18n', '~> 7.0', '>= 7.0.7'
-gem 'mobility', '~> 1.2', '>= 1.2.9'
 
 # Management
 gem 'activeadmin', '~> 2.13', '>= 2.13.1'
 gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'devise-i18n', '~> 1.11'
+gem 'money-rails', '~> 1.15'
 gem 'pundit', '~> 2.3'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
