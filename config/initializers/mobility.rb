@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Mobility.configure do
   # PLUGINS
   plugins do
@@ -102,7 +104,7 @@ Mobility.configure do
     # locale_accessors
     #
     # Or define specific defaults by uncommenting line below
-    locale_accessors [:uk, :ru]
+    locale_accessors %i[uk ru]
 
     # Attribute Methods
     #
