@@ -30,6 +30,6 @@ module HappyParentsUa
     config.i18n.load_path += Dir[Rails.root.join('config/locales/**/*.yml')]
 
     # config.eager_load_paths << Rails.root.join("extras")
-    config.generators.system_tests = nil
+    config.generators.test_framework = nil
   end
 end
