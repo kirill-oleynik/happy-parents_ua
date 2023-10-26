@@ -30,3 +30,10 @@ Metrics/BlockLength:
   Exclude:
     - db/schema.rb
     - config/environments/development.rb
+    - app/admin/**
+
+# ===================== Lints ====================
+Lint/ConstantDefinitionInBlock:
+  Enabled: true
+  Exclude:
+    - app/admin/**

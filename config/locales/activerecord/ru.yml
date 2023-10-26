@@ -1,6 +1,9 @@
 ru:
   activerecord:
     models:
+      toy:
+        one: Игрушка
+        other: Игрушки
       supplier:
         one: Поставщик
         other: Поставщики

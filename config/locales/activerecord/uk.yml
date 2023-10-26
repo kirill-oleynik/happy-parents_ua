@@ -1,6 +1,14 @@
 uk:
   activerecord:
+    errors:
+      models:
+        toy:
+          slug:
+            invlid: Посилання може містити тільки англійські, українські або російські літери та дефіси
     models:
+      toy:
+        one: Іграшка
+        other: Іграшки
       supplier:
         one: Постачальник
         other: Постачальники
@@ -17,6 +25,20 @@ uk:
         one: Угода на поставки Виробника
         other: Угоди на поставки Виробників
     attributes:
+      toy:
+        manufacturer_title: Назва у виробника
+        slug_uk: GПосилання (укр.)
+        slug_ru: Сыслка (рос.)
+        ui_title: Назва для користувача
+        ui_title_uk: Назва в магазині (укр.)
+        ui_title_ru: Название в магазине (рос.)
+        manufacturer: Виробник
+        inventory_number: Інвентарний номер
+        purchase_price_cents: Закупочна вартість
+        retail_price_cents: Роздрібна вартість
+        drop_shipping_available: Є Дроп Шипінг
+        published: Опублікований
+        balance_in_warehouse: Залишки на складі
       country:
         name: Назва
         name_uk: Назва
