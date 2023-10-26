@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 ActiveAdmin.register TradeMark do
-  menu parent: I18n.t('active_admin.menu.store')
+  menu parent: I18n.t('active_admin.menu.warehouse')
 
   permit_params :name, :manufacturer_id
 
