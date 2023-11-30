@@ -15,7 +15,7 @@ ActiveAdmin.register Toy do
                       balance_in_warehouse
                       drop_shipping_available
                       published
-                      trade_mark_id
+                      trade_mark
                       retail_price_cents].freeze
 
   permit_params ALL_ATTRIBUTES
@@ -33,7 +33,7 @@ ActiveAdmin.register Toy do
   end
 
   %i[inventory_number
-    trade_mark
+     trade_mark
      ui_title
      manufacturer_title
      purchase_price_cents

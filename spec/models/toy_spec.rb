@@ -9,15 +9,15 @@ RSpec.describe Toy do
 
   describe 'validations' do
     %i[inventory_number
-        manufacturer_title
-        purchase_price_cents
-        balance_in_warehouse
-        slug].each do |attribute|
+       manufacturer_title
+       purchase_price_cents
+       balance_in_warehouse
+       slug].each do |attribute|
       it { is_expected.to validate_presence_of(attribute) }
     end
 
     %i[inventory_number
-      manufacturer_title].each do |attribute|
+       manufacturer_title].each do |attribute|
       it { is_expected.to validate_uniqueness_of(attribute).scoped_to(:trade_mark_id).case_insensitive }
     end
 
