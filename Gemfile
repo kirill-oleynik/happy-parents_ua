@@ -10,11 +10,11 @@ gem 'draper', '~> 4.0', '>= 4.0.2'
 gem 'mobility', '~> 1.2', '>= 1.2.9'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 6.3'
-gem 'rails', '~> 7.0.5'
+gem 'rails', '~> 7.0.6'
 gem 'rails-i18n', '~> 7.0', '>= 7.0.7'
 
 # Management
-gem 'activeadmin', '~> 2.13', '>= 2.13.1'
+gem 'activeadmin', '~> 2.14'
 gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'devise-i18n', '~> 1.11'
 gem 'money-rails', '~> 1.15'
@@ -50,11 +50,11 @@ group :development, :test do
   gem 'ffaker', '~> 2.21'
   gem 'pry-rails', '~> 0.3.9'
   gem 'reek', '~> 6.1', '>= 6.1.4'
-  gem 'rubocop', '~> 1.51'
+  gem 'rubocop', '~> 1.54'
   gem 'rubocop-factory_bot', '~> 2.23', '>= 2.23.1'
   gem 'rubocop-faker', '~> 1.1'
   gem 'rubocop-performance', '~> 1.18'
-  gem 'rubocop-rails', '~> 2.19', '>= 2.19.1'
+  gem 'rubocop-rails', '~> 2.20'
   gem 'rubocop-rspec', '~> 2.22'
   gem 'rubocop-thread_safety', '~> 0.5.1'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -74,7 +74,7 @@ group :development do
 end
 group :test do
   gem 'fuubar', '~> 2.5', '>= 2.5.1'
-  gem 'pundit-matchers', '~> 2.3'
+  gem 'pundit-matchers', '~> 3.1'
   gem 'rspec-rails', '~> 6.0'
   gem 'shoulda-matchers', '~> 5.3'
 end
