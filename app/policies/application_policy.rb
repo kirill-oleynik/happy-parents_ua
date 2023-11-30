@@ -59,4 +59,10 @@ class ApplicationPolicy
       scope
     end
   end
+
+  private
+
+  def admin_permissions?
+    %w[admin superadmin].include? user.role
+  end
 end

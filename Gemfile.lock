@@ -180,7 +180,19 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    minitest (5.18.1)
+    minitest (5.18.0)
+    mobility (1.2.9)
+      i18n (>= 0.6.10, < 2)
+      request_store (~> 1.0)
+    monetize (1.12.0)
+      money (~> 6.12)
+    money (6.16.0)
+      i18n (>= 0.6.4, <= 2)
+    money-rails (1.15.0)
+      activesupport (>= 3.0)
+      monetize (~> 1.9)
+      money (~> 6.13)
+      railties (>= 3.0)
     msgpack (1.7.1)
     net-imap (0.3.6)
       date
@@ -192,6 +204,8 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
+    nokogiri (1.15.2-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.15.2-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.15.2-x86_64-linux)
@@ -353,6 +367,7 @@ GEM
     zeitwerk (2.6.8)
 
 PLATFORMS
+  arm64-darwin-22
   x86_64-darwin-17
   x86_64-linux
 
@@ -370,6 +385,8 @@ DEPENDENCIES
   factory_bot_rails (~> 6.2)
   ffaker (~> 2.21)
   fuubar (~> 2.5, >= 2.5.1)
+  mobility (~> 1.2, >= 1.2.9)
+  money-rails (~> 1.15)
   pg (~> 1.1)
   pry-rails (~> 0.3.9)
   puma (~> 6.3)

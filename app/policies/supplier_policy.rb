@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Defines user permissions to interact with User entity
-class UserPolicy < ApplicationPolicy
+# Defines user permissions to interact with Supplier entity
+class SupplierPolicy < ApplicationPolicy
   def index?
     admin_permissions?
   end
@@ -11,14 +11,14 @@ class UserPolicy < ApplicationPolicy
   end
 
   def create?
-    user.superadmin?
+    admin_permissions?
   end
 
   def update?
-    user.superadmin?
+    admin_permissions?
   end
 
   def destroy?
-    user.superadmin?
+    admin_permissions?
   end
 end

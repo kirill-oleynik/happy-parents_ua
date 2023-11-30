@@ -1,0 +1,5 @@
+ru:
+  active_admin:
+    menu:
+      store: Магазин
+      warehouse: Склад

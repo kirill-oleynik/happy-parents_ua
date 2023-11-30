@@ -1,0 +1,38 @@
+ru:
+  activerecord:
+    models:
+      toy:
+        one: Игрушка
+        other: Игрушки
+      supplier:
+        one: Поставщик
+        other: Поставщики
+      manufacturer:
+        one: Производитель
+        other: Производители
+      country:
+        one: Страна
+        other: Страны
+      trade_mark:
+        one: Торговая марка
+        other: Торговые марки
+      manufacturer_supply_agreement:
+        one: Договор на поставки Производителя
+        other: Договора на поставки Производителей
+    attributes:
+      country:
+        name: Название
+        name_uk: Назва
+        name_ru: Название
+      trade_mark:
+        name: Название
+        name_uk: Назва
+        name_ru: Название
+      manufacturer:
+        name: Название
+        country: Страна
+      supplier:
+        name: название
+      manufacturer_supply_agreement:
+        manufacturer: Производитель
+        supplier: Поставщик
