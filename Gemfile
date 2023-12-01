@@ -46,7 +46,7 @@ gem 'sprockets-rails', '~> 3.4', '>= 3.4.2'
 group :development, :test do
   gem 'awesome_print', '~> 1.9', '>= 1.9.2'
   gem 'bullet', '~> 7.1', '>= 7.1.4'
-  gem 'factory_bot_rails', '~> 6.2'
+  gem 'factory_bot_rails', '~> 6.4'
   gem 'ffaker', '~> 2.21'
   gem 'pry-rails', '~> 0.3.9'
   gem 'reek', '~> 6.1', '>= 6.1.4'
