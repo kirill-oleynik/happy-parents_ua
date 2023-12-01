@@ -15,7 +15,7 @@ gem 'rails-i18n', '~> 7.0', '>= 7.0.7'
 
 # Management
 gem 'activeadmin', '~> 3.1'
-gem 'devise', '~> 4.9', '>= 4.9.2'
+gem 'devise', '~> 4.9', '>= 4.9.3'
 gem 'devise-i18n', '~> 1.11'
 gem 'money-rails', '~> 1.15'
 gem 'pundit', '~> 2.3'
