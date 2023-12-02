@@ -2,6 +2,8 @@
 
 # Describes suppliers - manufacturers many-to-many relationsip
 class ManufacturerSupplyAgreement < ApplicationRecord
+  include RanSackableAttributable
+
   belongs_to :manufacturer
   belongs_to :supplier
 end

@@ -2,6 +2,8 @@
 
 # Simple toy entity
 class Toy < ApplicationRecord
+  include RanSackableAttributable
+
   SLUG_REGEX = /\A[a-zа-яґєіїё-]+\z/u
 
   extend Mobility

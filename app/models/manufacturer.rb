@@ -2,6 +2,8 @@
 
 # Products Manufacturer entity
 class Manufacturer < ApplicationRecord
+  include RanSackableAttributable
+
   belongs_to :country
   has_many :manufacturer_supply_agreements, dependent: :destroy
   has_many :suppliers, through: :manufacturer_supply_agreements
