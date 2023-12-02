@@ -4,6 +4,6 @@
 class ManufacturerSupplyAgreement < ApplicationRecord
   include RanSackableAttributable
 
-  belongs_to :manufacturer
-  belongs_to :supplier
+  belongs_to :manufacturer, optional: true
+  belongs_to :supplier, optional: true
 end

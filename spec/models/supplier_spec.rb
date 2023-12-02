@@ -4,7 +4,7 @@ RSpec.describe Supplier do
   subject(:supplier) { build(:supplier) }
 
   describe 'associations' do
-    it { is_expected.to have_many(:manufacturer_supply_agreements).dependent(:destroy) }
+    it { is_expected.to have_many(:manufacturer_supply_agreements).dependent(:nullify) }
     it { is_expected.to have_many(:manufacturers).through(:manufacturer_supply_agreements) }
   end
 
