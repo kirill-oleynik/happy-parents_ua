@@ -4,7 +4,7 @@
 class TradeMark < ApplicationRecord
   include RanSackableAttributable
 
-  belongs_to :manufacturer
+  belongs_to :manufacturer, optional: true
   has_many :toys, dependent: :nullify
   validates :name, presence: true, uniqueness: true
 end

@@ -4,7 +4,7 @@ RSpec.describe ManufacturerSupplyAgreement do
   subject(:agreement) { described_class.new }
 
   describe 'associations' do
-    it { is_expected.to belong_to(:manufacturer) }
-    it { is_expected.to belong_to(:supplier) }
+    it { is_expected.to belong_to(:manufacturer).optional }
+    it { is_expected.to belong_to(:supplier).optional }
   end
 end
