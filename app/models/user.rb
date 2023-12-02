@@ -2,6 +2,8 @@
 
 # Application User entity (management)
 class User < ApplicationRecord
+  include RanSackableAttributable
+
   PHONE_FORMAT = /\A\d{12}\z/
 
   devise :database_authenticatable, :recoverable, :trackable
