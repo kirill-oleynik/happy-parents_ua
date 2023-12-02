@@ -11,6 +11,8 @@ class Toy < ApplicationRecord
 
   belongs_to :trade_mark
 
+  delegate :name, to: :trade_mark, prefix: true
+
   validates :inventory_number,
             :manufacturer_title,
             :purchase_price_cents,

@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root 'pages#index'
   post 'locales/:locale', to: 'locales#create', as: 'set_locale'
+
+  resources :toys, only: :show
 end
