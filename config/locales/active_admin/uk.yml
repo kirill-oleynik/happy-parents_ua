@@ -27,6 +27,8 @@ uk:
       buttons:
         filter: "Фільтрувати"
         clear: "Очистити"
+    actions:
+      view_in_app: Сторінка
       predicates:
         contains: "Містить"
         equals: "="

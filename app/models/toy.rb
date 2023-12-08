@@ -9,6 +9,8 @@ class Toy < ApplicationRecord
   extend Mobility
   translates :slug, :ui_title
 
+  monetize :retail_price_cents, :purchase_price_cents
+
   belongs_to :trade_mark
 
   delegate :name, to: :trade_mark, prefix: true

@@ -3,3 +3,5 @@ ru:
     menu:
       store: Магазин
       warehouse: Склад
+    actions:
+      view_in_app: Страница

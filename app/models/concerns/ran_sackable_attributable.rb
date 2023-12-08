@@ -8,7 +8,7 @@ module RanSackableAttributable
   extend ActiveSupport::Concern
   class_methods do
     def ransackable_attributes(_auth_object = nil)
-      columns.map(&:name)
+      [*columns.map(&:name), 'id_value']
     end
   end
 end
