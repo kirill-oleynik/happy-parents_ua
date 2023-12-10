@@ -35,7 +35,9 @@ uk:
         manufacturer: Виробник
         inventory_number: Інвентарний номер
         purchase_price: Закупочна вартість
+        purchase_price_cents: Закупочна вартість в копійках
         retail_price: Роздрібна вартість
+        retail_price_cents: Роздрібна вартість в копійках
         drop_shipping_available: Є Дроп Шипінг
         published: Опублікований
         balance_in_warehouse: Залишки на складі

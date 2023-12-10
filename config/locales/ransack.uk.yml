@@ -1,0 +1,13 @@
+uk:
+  ransack:
+    asc: ascending
+    desc: descending
+    predicates:
+      cont: містить
+      not_cont: не містить
+      start: починається з
+      end: закінчується на
+      gt: більше ніж
+      lt: менше ніж
+      eq: дорівнює
+  

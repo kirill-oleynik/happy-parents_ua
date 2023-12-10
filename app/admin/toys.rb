@@ -38,7 +38,7 @@ ActiveAdmin.register Toy do
   filter :manufacturer_title
   # filter :ui_title_uk
   # filter :ui_title_ru
-  # filter :retail_price
+  filter :retail_price_cents
   filter :balance_in_warehouse
   filter :drop_shipping_available
   filter :published
