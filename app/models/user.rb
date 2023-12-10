@@ -2,7 +2,7 @@
 
 # Application User entity (management)
 class User < ApplicationRecord
-  include RanSackableAttributable
+  extend RansackSearchable
 
   PHONE_FORMAT = /\A\d{12}\z/
 

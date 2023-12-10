@@ -2,7 +2,7 @@
 
 # Simple toy entity
 class Toy < ApplicationRecord
-  include RanSackableAttributable
+  extend RansackSearchable
 
   SLUG_REGEX = /\A[a-zа-яґєіїё-]+\z/u
 

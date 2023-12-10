@@ -2,7 +2,7 @@
 
 # Products Country entity
 class Country < ApplicationRecord
-  include RanSackableAttributable
+  extend RansackSearchable
 
   extend Mobility
   translates :name

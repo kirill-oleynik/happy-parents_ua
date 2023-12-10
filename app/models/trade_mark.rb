@@ -2,7 +2,7 @@
 
 # Represents manufacturer's trade mark entity
 class TradeMark < ApplicationRecord
-  include RanSackableAttributable
+  extend RansackSearchable
 
   belongs_to :manufacturer, optional: true
   has_many :toys, dependent: :nullify

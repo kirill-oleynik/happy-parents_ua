@@ -2,7 +2,7 @@
 
 # Products Supplier entity
 class Supplier < ApplicationRecord
-  include RanSackableAttributable
+  extend RansackSearchable
 
   has_many :manufacturer_supply_agreements, dependent: :nullify
   has_many :manufacturers, through: :manufacturer_supply_agreements

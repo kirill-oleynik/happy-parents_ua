@@ -2,7 +2,7 @@
 
 # Products Manufacturer entity
 class Manufacturer < ApplicationRecord
-  include RanSackableAttributable
+  extend RansackSearchable
 
   belongs_to :country, optional: true
   has_many :manufacturer_supply_agreements, dependent: :nullify
