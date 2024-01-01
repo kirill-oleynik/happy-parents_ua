@@ -49,7 +49,7 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 6.4'
   gem 'ffaker', '~> 2.21'
   gem 'pry-rails', '~> 0.3.9'
-  gem 'reek', '~> 6.1', '>= 6.1.4'
+  gem 'reek', '~> 6.2'
   gem 'rubocop', '~> 1.56'
   gem 'rubocop-factory_bot', '~> 2.23', '>= 2.23.1'
   gem 'rubocop-faker', '~> 1.1'
