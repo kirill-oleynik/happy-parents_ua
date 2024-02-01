@@ -53,7 +53,7 @@ group :development, :test do
   gem 'rubocop', '~> 1.56'
   gem 'rubocop-factory_bot', '~> 2.23', '>= 2.23.1'
   gem 'rubocop-faker', '~> 1.1'
-  gem 'rubocop-performance', '~> 1.19'
+  gem 'rubocop-performance', '~> 1.20'
   gem 'rubocop-rails', '~> 2.20'
   gem 'rubocop-rspec', '~> 2.25'
   gem 'rubocop-thread_safety', '~> 0.5.1'
