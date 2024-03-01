@@ -68,7 +68,7 @@ group :development do
   # gem "rack-mini-profiler"
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-  gem 'brakeman', '~> 6.0'
+  gem 'brakeman', '~> 6.1'
   gem 'bundler-audit', '~> 0.9.1'
   gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 end
